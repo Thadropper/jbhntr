@@ -1,0 +1,121 @@
+{% extends 'main/base.html' %}
+
+{% block title %} Job Search {% endblock %}
+
+{% load crispy_forms_tags %}
+{% block content %} 
+<div class="bg-{{theme}} container-fluid containermargin text-{% if theme == "light" %}dark{% else %}light{%endif%}">
+      <h3 class="h3 m-5">Project Methodology Statement:</h3>
+      <p class="m-5">We are taking a Prototype methodology approach for our project. We have chosen this methodology as this gives us the best flexibility, allowing us to go from iteration to development regularly. We favour this as we often find ourselves wanting to change something during development, to match developing conditions, adapt to issues or just including new ideas. This methodology also focuses on improved quality of the product, as the process involves more stakeholder/user interaction feedback and regular evaluation, and less risk as it promises no deployable end product.</h3>
+      
+      <h3 class="h3 m-5">Features:</h3>
+      <ul class="list-group bg-{{theme}} m-5 text-{% if theme == "light" %}dark{% else %}light{%endif%}">
+        <li class="list-group-item bg-{{theme}}">Employers can post jobs for students</li>
+        <li class="list-group-item bg-{{theme}}">Students can apply for jobs</li>
+        <li class="list-group-item bg-{{theme}}">Notifcations on jobs added to saved filters</li>
+        <li class="list-group-item bg-{{theme}}">Filter jobs by career category</li>
+        <li class="list-group-item bg-{{theme}}">Filter jobs by hours per week</li>
+        <li class="list-group-item bg-{{theme}}">jobs watchlist</li>
+        <li class="list-group-item bg-{{theme}}">Search Job by organization or title</li>
+        <li class="list-group-item bg-{{theme}}">Personal Profile</li>
+      </ul>
+
+      <h3 class="h3 m-5">Competing Product Features:</h3>
+      <ul class=" list-group bg-{{theme}} m-5 text-{% if theme == "light" %}dark{% else %}light{%endif%}">
+        <li class="list-group-item bg-{{theme}}">Student Verifcation on Registeration (Proof of Study)</li>
+        <li class="list-group-item bg-{{theme}}">Saves Search Filters</li>
+        <li class="list-group-item bg-{{theme}}">Notifcations on jobs added to saved filters</li>
+        <li class="list-group-item bg-{{theme}}">Jobs Watchlist</li>
+        <li class="list-group-item bg-{{theme}}">Apple and Android App</li>
+        <li class="list-group-item bg-{{theme}}">Employers can post jobs for students</li>
+        <li class="list-group-item bg-{{theme}}">Students can apply for jobs</li>
+        <li class="list-group-item bg-{{theme}}">Filter jobs by career category</li>
+        <li class="list-group-item bg-{{theme}}">Filter jobs by hours per week</li>
+        <li class="list-group-item bg-{{theme}}">Search Job by organization or title</li>
+      </ul>
+
+      <h3 class="h3 m-5 ">Competing Product Analysis:</h3>
+      <p class="m-5">The main difference between our product and SJS(Student Job Search) is that our product has a student profile page, this is were employeers can filter through students who are looking for work without students having to apply.</h3>
+      
+      
+      <h3 class="h3 m-5">Team Member Profiles:</h3>
+      <div class="m-5">
+        <h6 class="h6">Zachariah Hull:</h6>
+        <h6 class="h6 mt-2">Napier, New Zealand</h6>
+        <p class="p mt-2">-Finished Highschool at St John's College to enter EIT(Eastern Institure of Technology) in 2017 to study Electrical Engeering. After completion while attending work experience at EMF Electical i worked at ABB manufactoring cables for high voltage power factor correction equipment. After spending a year there started a painting apprenticeship to later paint for myself to return studing at Eit, where i currently am in the bachelor of computer system to hopefully finish with a masters in cyber security.</h3>
+      </div>
+      <div class="m-5">
+        <h6 class="h6">Harry Ludemann:</h6>
+        <h6 class="h6 mt-2">Napier, New Zealand</h6>
+        <p class="mt-2">-Finished Highschool at St John's College to enter EIT(Eastern Institure of Technology) in 2017 to study Electrical Engeering. After completion while attending work experience at EMF Electical i worked at ABB manufactoring cables for high voltage power factor correction equipment. After spending a year there started a painting apprenticeship to later paint for myself to return studing at Eit, where i currently am in the bachelor of computer system to hopefully finish with a masters in cyber security.</p>
+      <div>
+
+      <h3 class="h3 mt-5 mb-5">Stake-Holder Register:</h3>
+      <table class="table text-{% if theme == "light" %}dark{% else %}light{%endif%}">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Stakeholder name</th>
+            <th scope="col">Title</th>
+            <th scope="col">Role</th>
+            <th scope="col">Power (H/L)</th>
+            <th scope="col">Interest (H/L)</th>
+            <th scope="col">Requirements</th>
+            <th scope="col">Communication</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Noor Alani</td>
+            <td>Teacher</td>
+            <td>Sponser</td>
+            <td>H</th>
+            <td>H</td>
+            <td>-</td>
+            <td>Weekly Via Eit Online</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Harry Ludemann</td>
+            <td>Student</td>
+            <td>Client</th>
+            <td>H</td>
+            <td>L</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Zachariah Hull</td>
+            <td>Student</td>
+            <td>Project Manager</th>
+            <td>H</td>
+            <td>H</td>
+            <td>Finish Project Within 8 Weeks</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td>Government</td>
+            <td>Government</td>
+            <td>Government</th>
+            <td>L</td>
+            <td>L</td>
+            <td>Follow all laws, Continuosly Paying Appriopriate Taxes</td>
+            <td>Dependent on income</td>
+          </tr>
+          <tr>
+            <th scope="row">5</th>
+            <td>John Doe	</td>
+            <td>Boss</td>
+            <td>Employer</th>
+            <td>H</td>
+            <td>H</td>
+            <td>Organsing and Managing staff</td>
+            <td>Daily</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+{% endblock %}
